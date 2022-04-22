@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { fetchQuizQuestions } from './API';
+import React, { useState } from "react";
+import { fetchQuizQuestions } from "./API";
 // Components
-import QuestionCard from './components/QuestionCard';
+import QuestionCard from "./components/QuestionCard";
 // types
-import { QuestionsState, Difficulty } from './API';
+import { QuestionsState, Difficulty } from "./API";
 // Styles
-import { GlobalStyle, Wrapper } from './App.styles';
+import { GlobalStyle, Wrapper } from "./App.styles";
 
 export type AnswerObject = {
   question: string;
@@ -72,7 +72,7 @@ const App: React.FC = () => {
     <>
       <GlobalStyle />
       <Wrapper>
-        <h1>REACT QUIZ</h1>
+        <h1>Guidara's Quiz</h1>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
           <button className='start' onClick={startTrivia}>
             Start
@@ -90,7 +90,10 @@ const App: React.FC = () => {
             callback={checkAnswer}
           />
         )}
-        {!gameOver && !loading && userAnswers.length === number + 1 && number !== TOTAL_QUESTIONS - 1 ? (
+        {!gameOver &&
+        !loading &&
+        userAnswers.length === number + 1 &&
+        number !== TOTAL_QUESTIONS - 1 ? (
           <button className='next' onClick={nextQuestion}>
             Next Question
           </button>
