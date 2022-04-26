@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
-import BGImage from "./images/cube.png";
+import BGImage from "./images/cube.jpg";
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background-image: url(${BGImage});
-    background-size: cover;
+    background-size:cover ;
     margin: 0;
     padding: 0 20px;
     display: flex;
