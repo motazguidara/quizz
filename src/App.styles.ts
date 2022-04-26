@@ -55,8 +55,8 @@ export const Wrapper = styled.div`
   .start,
   .next {
     cursor: pointer;
-    background: linear-gradient(100deg, #0a14c9, #9727b0);
-    border: 2px solid #000000;
+    background: linear-gradient(100deg, #000000, #000000);
+    border: 2px solid #fff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 40px;
