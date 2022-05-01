@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
-import BGImage from "./images/cube.jpg";
+import BGImage from "./images/t.jpg";
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -26,6 +26,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
+
   > p {
     color: #fff;
   }
@@ -34,12 +35,17 @@ export const Wrapper = styled.div`
     color: #fff;
     font-size: 2rem;
     margin: 0;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(255,193,225,1) 0%, rgba(186,186,227,1) 50%, rgba(148,224,240,1) 90%);
+    width: 10rem;
+    text-align:center;
+    margin-bottom: 2rem;
   }
 
   h1 {
     font-family: Fascinate;
-    background-image: linear-gradient(100deg, #fff, #fff);
-    font-weight: 400;
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(232,45,253,1) 100%);    font-weight: 400;
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -55,9 +61,9 @@ export const Wrapper = styled.div`
   .start,
   .next {
     cursor: pointer;
-    background: linear-gradient(100deg, #000000, #000000);
+    background: linear-gradient(90deg, rgba(255,193,225,1) 0%, rgba(186,186,227,1) 50%, rgba(148,224,240,1) 90%);
     border: 2px solid #fff;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 10px rgb(0, 0, #b8cfe0);
     border-radius: 10px;
     height: 40px;
     margin: 20px 0;
@@ -67,5 +73,6 @@ export const Wrapper = styled.div`
 
   .start {
     max-width: 200px;
+    
   }
 `;

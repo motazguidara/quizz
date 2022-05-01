@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   max-width: 1100px;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   text-align: center;
+  background: linear-gradient(90deg, rgba(255,193,225,1) 0%, rgba(186,186,227,1) 50%, rgba(148,224,240,1) 90%);
   p {
     font-size: 1rem;
     color: #fff;
